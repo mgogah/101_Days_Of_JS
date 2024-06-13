@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../../errorsForward.js"></script>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call of Duty Elite Clan</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body class="font-mono bg-gradient-to-br from-blue-900 to-purple-900 text-white">
+  <header class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-blue-900 to-purple-900 py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">CoD Elite Clan</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#about" class="hover:text-gray-400">About</a></li>
+          <li><a href="#team" class="hover:text-gray-400">Team</a></li>
+          <li><a href="#gallery" class="hover:text-gray-400">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero h-screen flex items-center justify-center">
+      <div class="container mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-4 tracking-wider">Welcome to CoD Elite Clan</h1>
+        <p class="text-2xl mb-8">Join the best Call of Duty players in the world</p>
+        <a href="#" class="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 rounded-full text-lg font-bold hover:from-blue-600 hover:to-purple-600 transition-colors duration-300">Join Now</a>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gradient-to-br from-blue-900 to-purple-900">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-center">About Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex flex-col justify-center">
+            <p class="mb-4">We are a dedicated group of Call of Duty players who strive for excellence. Our clan has been around for years, and we pride ourselves on our skill, teamwork, and camaraderie.</p>
+            <p class="mb-4">We compete in various tournaments and leagues, and we're always looking for new members to join our ranks. If you're a skilled Call of Duty player, we'd love to have you on our team.</p>
+            <a href="#" class="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 rounded-full text-lg font-bold hover:from-blue-600 hover:to-purple-600 transition-colors duration-300 self-start">Learn More</a>
+          </div>
+          <div class="flex justify-center">
+            <img src="assets/about-image.png" alt="About Us" class="w-full max-w-md rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="py-20 bg-gradient-to-br from-blue-900 to-purple-900">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-center">Our Team</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg p-6">
+                <img src="assets/team-1.png" alt="Team Member 1" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-2xl font-bold mb-2">John Doe</h3>
+                <p class="mb-4">Team Captain</p>
+                <p>John has been a part of our clan for 5 years and is known for his expert sniping skills.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg p-6">
+                <img src="assets/team-2.png" alt="Team Member 2" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-2xl font-bold mb-2">Jane Smith</h3>
+                <p class="mb-4">Assault Specialist</p>
+                <p>Jane is a newcomer to our clan, but her exceptional aim and quick reflexes have made her an invaluable asset.</
+</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg p-6">
+                <img src="assets/team-3.png" alt="Team Member 3" class="rounded-full w-32 h-32 mx-auto mb-4">
+                <h3 class="text-2xl font-bold mb-2">Michael Johnson</h3>
+                <p class="mb-4">Support Specialist</p>
+                <p>Michael's tactical expertise and ability to provide effective support for his teammates make him a crucial part of our clan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gradient-to-br from-blue-900 to-purple-900">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-center">Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/gallery-1.png" alt="Gallery Image 1" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-2xl font-bold mb-2">Victorious Moment</h3>
+              <p>Our team celebrates a hard-fought victory in a recent tournament.</p>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/gallery-2.png" alt="Gallery Image 2" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-2xl font-bold mb-2">Strategic Planning</h3>
+              <p>Our team discusses tactics and strategies for an upcoming match.</p>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/gallery-3.png" alt="Gallery Image 3" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-2xl font-bold mb-2">Teamwork in Action</h3>
+              <p>Our team members coordinate their movements during a heated battle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gradient-to-br from-blue-900 to-purple-900">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-center">Contact Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <form class="bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg p-6">
+              <div class="mb-4">
+                <label for="name" class="block font-bold mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg" required>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block font-bold mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg" required>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block font-bold mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg" required></textarea>
+              </div>
+              <button type="submit" class="bg-gradient-to-r from-blue-900 to-purple-900 px-6 py-3 rounded-full text-lg font-bold hover:from-blue-800 hover:to-purple-800 transition-colors duration-300">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="mb-4">Get in touch with us for more information about our clan or to inquire about joining.</p>
+            <p class="mb-4">You can also follow us on social media to stay up-to-date with our latest news and events.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-r from-blue-900 to-purple-900 py-4 text-center">
+    <p>&copy; <b id="demo"></b> Call of Duty Elite Clan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const date = new Date();
+	let year = date.getFullYear();
+    document.getElementById("demo").innerHTML = year;
+    // Swiper initialization
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      },
+    });
+
+    // ScrollReveal initialization
+    ScrollReveal().reveal('.hero', { delay: 300 });
+    ScrollReveal().reveal('#about', { delay: 300 });
+    ScrollReveal().reveal('#team', { delay: 300 });
+    ScrollReveal().reveal('#gallery', { delay: 300 });
+    ScrollReveal().reveal('#contact', { delay: 300 });
+
+    // GSAP animation
+    gsap.from('.hero h1', { y: '-100%', duration: 1, delay: 0.5, ease: 'power2.out' });
+    gsap.from('.hero p', { y: '100%', duration: 1, delay: 0.7, ease: 'power2.out' });
+    gsap.from('.hero a', { scale: 0, duration: 1, delay: 0.9, ease: 'back.out(1.7)' });
+  </script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
